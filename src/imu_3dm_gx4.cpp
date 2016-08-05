@@ -164,7 +164,7 @@ int main(int argc, char **argv) {
   bool verbose;
   
   //  load parameters from launch file
-  nh.param<std::string>("device", device, "/dev/ttyACM0");
+  nh.param<std::string>("device", device, "/dev/lord_imu");
   nh.param<int>("baudrate", baudrate, 115200);
   nh.param<std::string>("frame_id", frameId, std::string("imu"));
   nh.param<int>("imu_rate", requestedImuRate, 100);
